@@ -1,9 +1,9 @@
 #import <Foundation/Foundation.h>
 
 #if DDXML_LIBXML_MODULE_ENABLED
-#if TARGET_OS_IOS && TARGET_OS_EMBEDDED
+#if TARGET_OS_TV && !TARGET_OS_SIMULATOR
 @import libxml;
-#elif TARGET_IPHONE_SIMULATOR
+#elif TARGET_OS_TV && TARGET_OS_SIMULATOR
 @import libxmlSimu;
 #elif TARGET_OS_MAC
 @import libxmlMac;
